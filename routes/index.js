@@ -26,7 +26,11 @@ router.get('/feed', function(req,res,next) {
 
 /* GET message page */
 router.get('/message', function(req,res,next) {
- res.render('message', { title: 'messages' });
+ res.render('message', { title: 'messages'});
  });
+
+router.get('/practice',function(req,res,next){
+ res.render('practice',{ title:'practice'});
+});
 
 module.exports = router;
